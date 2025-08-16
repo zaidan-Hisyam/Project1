@@ -8,6 +8,19 @@
     android:orientation="vertical"
     android:background="#E72A2A">
 
+    <TextView
+        android:id="@+id/textViewJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="BIODATA DIRI"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="180dp"
@@ -17,19 +30,6 @@
         android:contentDescription="Foto Profil"
         android:src="@drawable/fotoproject1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewJudul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BIODATA\nDIRI"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -109,55 +109,31 @@
         android:id="@+id/textViewPendidikan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
         android:text="PENDIDIKAN"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#000000"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHobi"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHobi" />
 
     <TextView
         android:id="@+id/textViewSD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SDN KLECO 1"
+        android:text="SDN KLECO 1\n MTSN 1 SKA \n SMK NEGERI 2 SKA"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="4dp"
         app:layout_constraintTop_toBottomOf="@+id/textViewPendidikan"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewMTS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MTSN 1 SKA"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSD"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewSMK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SMKN 2 SKA"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMTS"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="366dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:layout_gravity="center"
         android:text="NextCount"
         android:textSize="20sp"
@@ -168,7 +144,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="366dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:layout_gravity="center"
         android:text="Kembali"
         android:textSize="20sp"

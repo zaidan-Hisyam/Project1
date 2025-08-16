@@ -29,7 +29,7 @@ public class activity_count extends AppCompatActivity {
         tombolRestart.setOnClickListener(v -> {
             angka = 0;
             textView2.setText(String.valueOf(angka));
-            Toast.makeText(this, "Angka telah direset", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Angka sudah direset", Toast.LENGTH_SHORT).show();
         });
 
         tombolKembali.setOnClickListener(v -> {
